@@ -15,3 +15,6 @@ cd Server
 dotnet-ef migrations add InitialMigration -o "Data/Migrations"
 
 migration class is specified witch changes applied to database
+
+### generate database
+dotnet ef database update
