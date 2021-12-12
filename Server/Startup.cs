@@ -14,8 +14,8 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Server.Data;
 
-namespace Server;
-
+namespace Server
+{
 public class Startup
 {
     public Startup(IConfiguration configuration)
@@ -74,4 +74,5 @@ public class Startup
             endpoints.MapControllers();
         });
     }
+}
 }

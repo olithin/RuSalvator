@@ -1,7 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-#nullable disable
-
 namespace Server.Data.Migrations
 {
     public partial class InitialMigration : Migration
