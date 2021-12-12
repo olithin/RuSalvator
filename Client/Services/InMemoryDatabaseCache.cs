@@ -1,4 +1,5 @@
 ﻿using System.Net.Http.Json;
+using Client.Static;
 using Shared.Models;
 
 namespace Client.Services
@@ -26,7 +27,7 @@ namespace Client.Services
 
         internal async Task GetCategoriesFromDatabaseAndCache()
         {
-            _categories = await _httpClient.GetFromJsonAsync<List<Category>>("endpoint");
+            _categories = await _httpClient.GetFromJsonAsync<List<Category>>(APIEndpoints.s_categories);
         }
 
         internal event Action OnCategoriesDataChanged;
